@@ -10,7 +10,7 @@ This work treats question prediction as an empirical question: given the first N
 
 ---
 
-### Passage Span Extraction
+### Passage span extraction
 
 Grounds question generation in specific, verifiable facts from the source passage.
 
@@ -29,7 +29,7 @@ Grounds question generation in specific, verifiable facts from the source passag
 
 ---
 
-## Evaluation Metric
+## Evaluation metric
 
 **Hit Rate** is the primary metric:
 
@@ -50,9 +50,9 @@ Only score-3 pairs contribute to Hit Rate.
 
 ---
 
-## Running the Workflow
+## Running the workflow
 
-The full pipeline is implemented as an **n8n** workflow (`workflow.json`). It reads dialogues from an Excel file, loops over each one, runs the Span Extractor → Style Generator → Judge pipeline, and writes results to an output Excel file.
+The full pipeline is implemented as an **n8n** workflow (`workflow.json`). It reads dialogues from an Excel file, loops over each one, runs the Span Extractor, then Style Generator, then Judge pipeline, and writes results to an output Excel file.
 
 ### Prerequisites
 
@@ -66,7 +66,7 @@ The full pipeline is implemented as an **n8n** workflow (`workflow.json`). It re
 4. In the **Edit Fields** node at the start of the workflow, set `split_pct` to the desired context percentage (any integer between 20 and 80).
 5. Execute the workflow. Results are written to an Excel file by the **Convert to File** node.
 
-### Input File Format
+### Input file format
 
 The input Excel file must have one row per dialogue with the following columns:
 
