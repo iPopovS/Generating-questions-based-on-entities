@@ -1,4 +1,4 @@
-# An approach for RAG performance improvement based on user requests predicting and interests Modelling
+# An approach for RAG performance improvement based on user requests predicting and interests modelling
 
 This repository contains the implementation and evaluation data for a research project investigating whether future user questions in reading-comprehension dialogues can be reliably predicted and used to pre-fetch relevant documents in Retrieval-Augmented Generation (RAG) systems before the user asks.
 
